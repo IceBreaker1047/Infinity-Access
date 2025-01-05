@@ -1,0 +1,372 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #111;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Login{
+    color: white;
+    font-size: 20;
+    border-bottom: 2px solid blue;
+    cursor: pointer;
+}
+
+.searchIcon{
+    cursor: pointer;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+    color: rgb(178, 168, 168);
+}
+
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.navBottom{
+    color: rgb(178, 168, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MenuItems{
+    padding: 0px 50px;
+    cursor: pointer;
+}
+
+.MenuItems:hover{
+    color: white;
+}
+
+.slider{
+    background-image: url("Images/SliderBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600 ;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+}
+
+.sliderWrapper{
+    display: flex;
+    align-items: center;
+    width: 500vw;
+    transition: all ease-in-out 1.5s;
+}
+
+.sliderItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(178, 168, 168);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+}
+
+.slideImage{
+    padding: 100;
+}
+
+.sliderTitle{
+    position: absolute;
+    left: 10%;
+    font-size: 40;
+    max-width: 80%;
+}
+
+.sliderButton{
+    position: absolute;
+    right: 7%;
+    top: 30%;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sliderButton:hover{
+    color: blue;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10;
+}
+
+.featureItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.featureTitle{
+    font-weight: 600;
+    margin: 20;
+}
+
+.featureDescription{
+    align-items: center;
+    width: 200;
+    padding: 20;
+}
+
+.explaination{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 100%);
+}
+
+.explainationImage{
+    width: 50%;
+    height: auto;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.textWrapper{
+    position: relative;
+}
+
+.header{
+    color: blue;
+    position: absolute;
+    left: 35%;
+    bottom: 100%;
+    border-bottom: 2px solid blue;
+}
+
+.para{
+    color: rgb(178, 168, 168);
+    padding: 20;
+    font-size: 17;
+    margin: 0;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+}
+
+.footerLeft{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    padding: 50;
+}
+
+.footerMenu{
+    padding: 50;
+}
+
+.fMenuTitle{
+    color: blue;
+    font-size: 30;
+    font-weight: 300;
+}
+
+.footerRight{
+    flex: 1;
+    padding: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fMenuList{
+    list-style: none;
+    padding: 0;
+}
+
+.fListItem{
+    margin-bottom: 10;
+    color: rgb(178, 168, 168);
+    cursor: pointer;
+}
+
+.fIcon{
+    height: 50;
+    padding: 20;
+    cursor: pointer;
+}
+
+.copyright{
+    color: rgb(178, 168, 168);
+}
+
+.fInput{
+    padding: 5;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.fButton{
+    padding: 5;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.fButton:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    nav{
+        padding: 0;
+    }
+
+    .searchInput{
+        display: none;
+        padding: 20;
+    }
+
+    .navBottom{
+        flex-wrap: wrap;
+    }
+
+    .MenuItems{
+        margin: 20;
+        font-weight: 700;
+        font-size: 20;
+    }
+
+    .slider{
+        clip-path: none;
+    }
+
+    .slideImage{
+        width: 90%;
+        height: auto;
+    }
+
+    .sliderTitle{
+        left: unset;
+        top: 0%;
+        padding: 5;
+    }
+
+    .coop_card{
+        visibility: hidden;
+        position: relative;
+    }
+
+    .coop_card::after{
+        visibility: visible;
+        content: "COOP.";
+        position: absolute;
+        top: unset;
+        top: 0%;
+    }
+
+    .sliderButton{
+        right: unset;
+        top: unset;
+        bottom: 0%;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+
+    .explaination{
+        clip-path: none;
+        flex-direction: column;
+    }
+
+    .explainationImage{
+        width: 100%;
+        height: auto;
+    }
+
+    .header{
+        bottom: unset;
+        left: unset;
+        left: 20%;
+    }
+
+    .para{
+        visibility: hidden;
+    }
+
+    .para::after{
+        visibility: visible;
+        content: "The Infinity Access Card offers a post-payment limit, allowing users to make purchases without immediate funds. It features exclusive travel benefits, such as discounted airfare, hotel bookings, and airport lounge access. Designed for convenience and flexibility, it combines financial freedom with premium rewards. Ideal for those seeking a secure, versatile payment solution.";
+        color: white;
+        padding: 0px;
+        position: absolute; 
+        top: 25%;   
+        left: 0;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLeft{
+        padding: 0;
+    }
+
+    .fMenuTitle{
+        font-size: 20;
+    }
+
+    .fMenuList{
+        font-size: 15;
+    }
+
+    .footerMenu{
+        padding: 10;
+        width: 90%;
+    }
+
+    .fIcon{
+        height: 30;
+        width: auto;
+    }
+}

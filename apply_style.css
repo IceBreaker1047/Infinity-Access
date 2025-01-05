@@ -1,0 +1,262 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #111;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Login{
+    color: white;
+    font-size: 20;
+    border-bottom: 2px solid blue;
+    cursor: pointer;
+}
+
+.searchIcon{
+    cursor: pointer;
+}
+
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.navBottom{
+    color: rgb(178, 168, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+}
+
+.footerLeft{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    padding: 50;
+}
+
+.footerMenu{
+    padding: 50;
+}
+
+.fMenuTitle{
+    color: blue;
+    font-size: 30;
+    font-weight: 300;
+}
+
+.footerRight{
+    flex: 1;
+    padding: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fMenuList{
+    list-style: none;
+    padding: 0;
+}
+
+.fListItem{
+    margin-bottom: 10;
+    color: rgb(178, 168, 168);
+    cursor: pointer;
+}
+
+.fIcon{
+    height: 50;
+    padding: 20;
+    cursor: pointer;
+}
+
+.copyright{
+    color: rgb(178, 168, 168);
+}
+
+.fInput{
+    padding: 5;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.fButton{
+    padding: 5;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.fButton:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.applyBoxParent{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.applyBox{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #111;
+    border-radius: 10px;
+    width: 500;
+    background-color: #e9ecef;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 50;
+}
+
+.Heading{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.NameContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameTitle{
+    padding: 20;
+    font-size: 25;
+}
+
+.name{
+    border-radius: 4px;
+    font-size: 25;
+    background-color: transparent;
+    color: rgb(178, 168, 168);
+}
+
+.dobContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dobTitle{
+    font-size: 25;
+    padding: 20;
+}
+
+.dob{
+    font-size: 25;
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgb(178, 168, 168);
+}
+
+.typeContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTitle{
+    font-size: 25;
+    padding: 20;
+}
+
+.card-type{
+    font-size: 15;
+    padding: 20;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.applyButton{
+    font-size: 25;
+    background-color: transparent;
+    border: none;
+    padding: 20;
+}
+
+.applyButton:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1100px) {
+    nav{
+        padding: 0;
+    }
+
+    .searchInput{
+        display: none;
+        padding: 20;
+    }
+
+    .navBottom{
+        flex-wrap: wrap;
+    }
+
+    .MenuItems{
+        margin: 20;
+        font-weight: 700;
+        font-size: 20;
+    }
+
+    .applyBox{
+        width: 80%;
+    }
+
+    .Heading{
+        border-bottom: none;
+    }
+
+    .name{
+        width: 90%;
+    }
+
+    .dobTitle{
+        visibility: hidden;
+    }
+
+    .dobTitle::after{
+        visibility: visible;
+        content: "DOB";
+    }
+
+    .cardTitle{
+        visibility: hidden;
+    }
+
+    .cardTitle::after{
+        visibility: visible;
+        content: "Card";
+    }
+
+}

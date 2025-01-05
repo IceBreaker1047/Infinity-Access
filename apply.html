@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="apply_style.css">
+    <link rel="icon" href="Images/Logo.png">
+    <title>Apply For Card</title>
+</head>
+<body>
+    <nav>
+        <div class="navTop">
+            <div class="navItem">
+                <img src="Images/Logo.png" alt="" class="logo" height="70" onclick="window.open('index.html' , '_self')">
+            </div>
+            <div class="navItem">
+                <input type="text" placeholder="Search...." class="searchInput">
+                <img src="Images/search.png" alt="" width="20px" class="searchIcon">
+            </div>
+            <div class="navItem">
+                <span class="Login">
+                    Prenium Cards
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="applyBoxParent">  
+        <div class="applyBox">
+                <h1 class="Heading">Apply For Infinity Access Card</h1>
+                <div class="NameContainer">
+                    <h3 class="nameTitle">Name</h3>
+                    <input type="text" placeholder="Full Name" class="name" required>
+                </div>
+                <div class="dobContainer">
+                    <h3 class="dobTitle">Date of Birth</h3>
+                    <input type="date" placeholder="date of birth" class="dob" required>
+                </div>
+                <div class="typeContainer">
+                    <h3 class="cardTitle">Apply for card</h3>
+                    <select class="card-type" name="cardType" required>
+                        <option value="" disabled selected>Select your card type</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="debit-card">Debit Card</option>
+                        <option value="corporate-card">Corporate Card</option>
+                        <option value="travel-card">Travel Card</option>
+                    </select>
+                </div>
+                <button class="applyButton" value="Submit" onclick="apply()">APPLY</button>
+
+        </div>
+    </div>
+
+    <script src="apply_app.js"></script>
+</body>
+</html>
