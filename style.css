@@ -247,7 +247,7 @@ footer{
 @keyframes appear{
     from{
         opacity: 0;
-        scale: 0.5;
+        scale: 0;
     }
     to{
         opacity: 1;
