@@ -24,3 +24,5 @@ Technologies Used
 HTML5: For structuring the content. 
 CSS3: For styling and responsiveness.
 JavaScript (ES6): For interactivity and dynamic features.
+
+By Ansh Rajpal
