@@ -20,6 +20,7 @@ Newsletter Email Validation: The newsletter subscription form validates email ad
 Animation: Smooth animations, such as appearing effects, enhance the visual appeal and interactivity of elements.
 
 Technologies Used
-HTML5: For structuring the content.
+
+HTML5: For structuring the content. 
 CSS3: For styling and responsiveness.
 JavaScript (ES6): For interactivity and dynamic features.
